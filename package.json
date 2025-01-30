@@ -4,6 +4,8 @@
   "description": "This is reactjs tutorial",
   "main": "App.js",
   "scripts": {
+    "start":"parcel sample.html",
+    "build:":"parcel build sample.html",
     "test": "jest"
   },
   "repository": {
