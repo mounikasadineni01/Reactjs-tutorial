@@ -9,7 +9,7 @@
 # React components
 
 - 1. Class components - old
-- 2. Functional components - new
+- 2. Functional components - normal js function that returns react element.
 
 # Parcel
 
