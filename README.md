@@ -1,5 +1,7 @@
 # React Js
 
+- Is fas because it can do effiecent DOM manipulations using virtual DOM.
+
 - ^ caret inmstall minor versions whereas tilde ~ install major versions
 
 - JSX code is transpiled before it reaches the JS engine/browser- done by parcel because of babel
@@ -33,8 +35,19 @@
 
 # React commands for execution
 
-npm init-jest(test)
-npm install -D parcel. D means dev dependency
-npx parcel sample.html, npx parcel build sample.html(for production) and remove main in package.json (or) npm run start (or) npm start
-npm install react
-npm install react-dom
+- npm init-jest(test)
+- npm install -D parcel. D means dev dependency
+- npx parcel sample.html, npx parcel build sample.html(for production) and remove main in package.json (or) npm run start (or) npm start
+- npm install react
+- npm install react-dom
+
+# React Hooks
+
+- Normal JS Utility Functions
+- useState() - super powerful state variables.
+- useEffect()
+
+# Reconcilliation Algorithm
+
+- Virtual DOM is a representation of the actual DOM.- JS object
+- React Fiber - Find difference between twi virtual DOMS's and update the actual DOM by rendering the UI.

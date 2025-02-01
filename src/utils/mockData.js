@@ -1,23 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-/**
- * Header
- *   - Logo
- *   - Nav Items
- * Body
- *   - Search bar
- *   - Search button
- *   - Restaurent container
- *     - Cards
- * Footer
- *   - Copyrights
- *   - Contact
- *   - Links
- *   - Address
- */
-
-const resList = [
+export const resList = [
   {
     type: "restaurant",
     data: {
@@ -781,7 +762,7 @@ const resList = [
     subtype: "basic",
   },
 ];
-const resObj = {
+export const resObj = {
   type: "restaurant",
   data: {
     type: "F",
@@ -905,86 +886,3 @@ const resObj = {
   },
   subtype: "basic",
 };
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://media.istockphoto.com/id/1435983029/vector/food-delivery-logo-images.jpg?s=612x612&w=0&k=20&c=HXPxcjOxUiW4pMW1u9E0k2dJYQOU37a_0qZAy3so8fY="
-        ></img>
-        <h1>Uber Eats</h1>
-      </div>
-      <div className="navbar">
-        <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Contact</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-const Card = (props) => {
-  // const{resName, cuisine, Rating} = props;
-  const { resData } = props;
-  const {
-    name,
-    cloudinaryImageId,
-    cuisines,
-    avgRating,
-    costForTwo,
-    deliveryTime,
-  } = resData?.data;
-  return (
-    <div className="res-card">
-      <img
-        className="res-image"
-        src={
-          "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_342,q_80,fl_lossy,dpr_2.0,c_fill,f_auto,h_156/" +
-          cloudinaryImageId
-        }
-        alt={name}
-      ></img>
-      <h3>{name}</h3>
-      <h5>{cuisines.join(", ")}</h5>
-      <h5>Rating : {avgRating} </h5>
-      <h5>{costForTwo / 100} FOR TWO</h5>
-      <h5>{deliveryTime} minutes</h5>
-    </div>
-  );
-};
-
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="searchbar">Searchbar</div>
-      <div className="res-container">
-        {/*<Card resData={resObj} />*/}
-        {/*<Card resData={resList[1]} />*/}
-        {resList.map((restaurant) => (
-          <Card key={restaurant.data.id} resData={restaurant} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const Footer = () => {
-  return <div className="footer"></div>;
-};
-
-const Swiggy = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-      <Footer />
-    </div>
-  );
-};
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Swiggy />);
