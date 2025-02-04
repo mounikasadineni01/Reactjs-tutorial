@@ -18,18 +18,21 @@
   width: 150px;
   height: auto;
 }
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navbar ul {
   display: flex;
   list-style-type: none;
-  padding-top: 30px;
 }
 .navbar ul li {
   padding: 5px;
-  margin: 5px;
   cursor: pointer;
   font-size: 24px;
+  height: auto;
 }
-
 .navbar ul li:hover {
   border: 1px solid rgb(242, 154, 39);
 }
@@ -65,7 +68,6 @@
   border-radius: 10px;
   border: 1px solid burlywood;
 }
-
 .res-card:hover {
   border: 1px solid burlywood;
   cursor: pointer;
@@ -79,8 +81,20 @@ h5 {
   padding-left: 5px;
 }
 .Search-button {
-  margin: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .filter-button {
   margin: 10px;
+  cursor: pointer;
+}
+.login {
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  background-color: blanchedalmond;
+  padding: 5px;
+}
+.login:hover {
+  border: 1px solid rgb(242, 154, 39);
 }
