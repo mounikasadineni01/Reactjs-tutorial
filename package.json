@@ -4,8 +4,8 @@
   "description": "This is reactjs tutorial",
   "main": "App.js",
   "scripts": {
-    "start":"parcel sample.html",
-    "build:":"parcel build sample.html",
+    "start": "parcel sample.html",
+    "build:": "parcel build sample.html",
     "test": "jest"
   },
   "repository": {
@@ -24,9 +24,10 @@
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.11.2"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 versions"
   ]
 }

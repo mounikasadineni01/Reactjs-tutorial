@@ -53,7 +53,7 @@
 }
 .res-card {
   width: 220px;
-  height: auto;
+  height: 500px;
   background-color: antiquewhite;
   padding: 5px;
   margin: 5px;
@@ -97,4 +97,10 @@ h5 {
 }
 .login:hover {
   border: 1px solid rgb(242, 154, 39);
+}
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
 }

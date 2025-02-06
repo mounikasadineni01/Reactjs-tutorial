@@ -2,6 +2,10 @@ const Shimmer = () => {
   return (
     <div className="body">
       <div className="filter-res">
+        <div className="search-res">
+          <input type="text"></input>
+          <button className="Search-button">Search</button>
+        </div>
         <button className="filter-button">See top restaurents</button>
       </div>
       <div className="res-container">
