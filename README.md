@@ -35,11 +35,16 @@
 
 # React commands for execution
 
+- Open Folder, create html,js and css files.
+- html:5 in html page.
+- Add <div id="root"></div>
+    <script type="module" src="./src/App.js"></script>
 - npm init-jest(test)
 - npm install -D parcel. D means dev dependency
 - npx parcel sample.html, npx parcel build sample.html(for production) and remove main in package.json (or) npm run start (or) npm start
 - npm install react
 - npm install react-dom
+- In js file import react, create element and add: const root = ReactDOM.createRoot(document.getElementById("root"));root.render(<Sample />);
 
 # React Hooks
 
